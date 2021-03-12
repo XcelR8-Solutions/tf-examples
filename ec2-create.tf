@@ -8,8 +8,9 @@ terraform {
 }
 
 provider "aws" {
-  profile = "default"
   region  = "us-west-2"
+  access_key = var.jeffb_aws_key
+  secret_key = var.jeffb_aws_secret
 }
 
 resource "aws_instance" "example" {
