@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "aws" {
-  region  = "us-west-2"
+  region  = "us-west-1"
   access_key = var.jeffb_aws_key
   secret_key = var.jeffb_aws_secret
 }
